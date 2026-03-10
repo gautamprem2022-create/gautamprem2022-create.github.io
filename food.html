@@ -1,44 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Food</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Local Food - Solapur</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <header>
+        <h1>Regional Cuisine</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="places.html">Places</a>
+        <a href="culture.html">Culture</a>
+        <a href="travel.html">Travel Guide</a>
+        <a href="food.html">Food</a>
+    </nav>
+    <div class="container">
+        <h2>Famous Dishes</h2>
+        <div class="card">
+            <strong>Jowar Bhakri:</strong> Traditional flatbread made from sorghum flour, served with spicy curries and chutneys[cite: 76, 77].
+        </div>
+        <div class="card">
+            <strong>Shenga Chutney:</strong> Dry peanut chutney made with roasted peanuts, garlic, and spices[cite: 78, 79].
+        </div>
+        <div class="card">
+            <strong>Misal Pav:</strong> Spicy sprouted lentil curry served with bread[cite: 81, 82].
+        </div>
+        <div class="card">
+            <strong>Puran Poli:</strong> Sweet flatbread filled with jaggery and lentils, prepared for special occasions[cite: 83, 84].
+        </div>
 
-<header>
-<h1>Local Food</h1>
+        <h2>Street Food</h2>
+        <p>The lively street food culture includes[cite: 85, 86]:</p>
+        <ul>
+            <li>Vada Pav [cite: 87]</li>
+            <li>Bhel Puri [cite: 88]</li>
+            <li>Samosa [cite: 89]</li>
+            <li>Pav Bhaji [cite: 90]</li>
+        </ul>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="places.html">Places</a>
-<a href="culture.html">Culture</a>
-<a href="travel-guide.html">Travel Guide</a>
-<a href="food.html">Food</a>
-<a href="enquiry.html">Enquiry</a>
-</nav>
-</header>
-
-<section class="container">
-
-<h2>Famous Dishes</h2>
-
-<ul>
-<li>Street Food</li>
-<li>Traditional Meals</li>
-<li>Seafood Specialties</li>
-<li>Local Desserts</li>
-</ul>
-
-<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" class="image">
-
-</section>
-
-<footer>
-<p>© 2026 Incredible Tourism</p>
-</footer>
-
+        <hr>
+        <h2>Tourist Enquiry</h2>
+        <form id="enquiryForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <select id="interest">
+                <option value="spirituality">Spirituality</option>
+                <option value="history">History</option>
+                <option value="textiles">Textiles</option>
+                <option value="food">Food</option>
+            </select>
+            <textarea id="message" placeholder="How can we help you plan your visit?"></textarea>
+            <button type="submit">Send Enquiry</button>
+        </form>
+    </div>
+    <script src="enquiry.js"></script>
 </body>
 </html>
