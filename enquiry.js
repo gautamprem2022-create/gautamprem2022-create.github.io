@@ -5,12 +5,12 @@ let email=document.getElementById("email").value;
 let phone=document.getElementById("phone").value;
 
 if(name==""){
-alert("Name is required");
+alert("Please enter your name");
 return false;
 }
 
 if(email==""){
-alert("Email is required");
+alert("Please enter your email");
 return false;
 }
 
@@ -19,7 +19,7 @@ alert("Enter valid phone number");
 return false;
 }
 
-alert("Form Submitted Successfully");
+alert("Enquiry Submitted Successfully!");
 
 return true;
 
