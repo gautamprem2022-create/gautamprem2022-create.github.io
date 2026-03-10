@@ -1,26 +1,12 @@
-function validateForm(){
+document.getElementById('enquiryForm').addEventListener('submit', function(event) {
+    event.preventDefault();
 
-let name=document.getElementById("name").value;
-let email=document.getElementById("email").value;
-let phone=document.getElementById("phone").value;
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const interest = document.getElementById('interest').value;
 
-if(name==""){
-alert("Please enter your name");
-return false;
-}
-
-if(email==""){
-alert("Please enter your email");
-return false;
-}
-
-if(phone.length<10){
-alert("Enter valid phone number");
-return false;
-}
-
-alert("Enquiry Submitted Successfully!");
-
-return true;
-
-}
+    alert(`Thank you, ${name}! We have received your enquiry about ${interest}. We will contact you at ${email} shortly.`);
+    
+    // Reset the form
+    this.reset();
+});
